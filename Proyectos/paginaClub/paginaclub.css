@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.hero{
+    background: linear-gradient(135deg, #A50044, #004D98);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 20px;
+}
+
+/* MENU */
+
+.menu{
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #EDBB00;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* TARJETAS */
+
+.card{
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color: #004D98;
+    margin-bottom: 20px;
+    border-left: 6px solid #A50044;
+    padding-left: 10px;
+}
+
+.card h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #A50044;
+}
+
+.card p{
+    text-align: justify;
+}
+
+/* LISTA DATOS */
+
+.datos-lista{
+    list-style: none;
+}
+
+.datos-lista li{
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* TABLAS */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th{
+    background: #004D98;
+    color: #EDBB00;
+    padding: 15px;
+}
+
+table td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background: #f9f9f9;
+}
+
+table tr:hover{
+    background: #eef4ff;
+}
+
+/* TITULOS */
+
+.titulos{
+    list-style: none;
+}
+
+.titulos li{
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 18px 20px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    border-left: 6px solid #A50044;
+}
+
+.titulo{
+    font-weight: bold;
+    color: #111;
+    font-size: 18px;
+}
+
+.fechas{
+    max-width: 60%;
+    text-align: right;
+    color: #555;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .menu a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .titulos li{
+        flex-direction: column;
+    }
+
+    .fechas{
+        max-width: 100%;
+        text-align: left;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+
+}

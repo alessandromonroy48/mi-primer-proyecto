@@ -1,0 +1,14 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.bloque{
+    background-color: cadetblue;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    display: none;
+}
+
+li{
+    list-style: none;
+}

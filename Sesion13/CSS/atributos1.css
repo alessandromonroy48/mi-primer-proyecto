@@ -1,0 +1,13 @@
+/* 
+No es la solucion
+.externo{
+    color: green;
+} */
+
+a[class="externo"]{
+    color: green;
+}
+
+a[class~="prueba"]{
+    color: magenta;
+}

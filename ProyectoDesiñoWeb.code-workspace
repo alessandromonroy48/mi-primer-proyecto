@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "cSpell.ignoreWords": [
+            "Guardar",
+            "Recuperar",
+            "Teléfono",
+            "codigo",
+            "contacto",
+            "contactos",
+            "datos",
+            "formulario",
+            "guardados",
+            "lista",
+            "mensaje",
+            "nombre",
+            "validacion"
+        ]
+    }
+}

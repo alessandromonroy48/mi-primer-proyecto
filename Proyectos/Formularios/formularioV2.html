@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Laboral</title>
+
+    <link rel="stylesheet" href="css/formularioV2.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="lado-izquierdo">
+
+            <img src="img/trabajo.png" alt="Trabajo" class="img-principal">
+
+            <h1>Encuesta Laboral</h1>
+
+            <p>
+                Gracias por formar parte de nuestra empresa.
+                Tu opinión es importante para mejorar el ambiente laboral.
+            </p>
+
+            <div class="info-extra">
+
+                <div class="info-box">
+                    <img src="img/ambiente.png" alt="">
+                    <span>Personal calificado</span>
+                </div>
+
+                <div class="info-box">
+                    <img src="img/laboral.png" alt="">
+                    <span>Mejor ambiente laboral</span>
+                </div>
+
+                <div class="info-box">
+                    <img src="img/evaluacion-empresarial.png" alt="">
+                    <span>Evaluación empresarial</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FORMULARIO -->
+
+        <div class="lado-derecho">
+
+            <form action="data.php" method="post">
+
+                <h2>Formulario de Encuesta</h2>
+
+                <!-- DATOS PERSONALES -->
+
+                <fieldset>
+
+                    <legend>Datos Laborales</legend>
+
+                    <div class="grupo">
+
+                        <label>Nombre y Apellidos</label>
+                        <input type="text" placeholder="Ingrese su nombre">
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label>Dirección</label>
+                        <input type="text" placeholder="Ingrese dirección">
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label>Teléfono</label>
+                        <input type="text" placeholder="999999999">
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label>Fecha de ingreso</label>
+
+                        <input type="date">
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label>Puesto de trabajo</label>
+
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Administración</option>
+                            <option>Logística</option>
+                            <option>Sistemas</option>
+                            <option>Marketing</option>
+                        </select>
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label>DNI</label>
+                        <input type="text" placeholder="12345678">
+
+                    </div>
+
+                    <div class="grupo">
+
+                        <label>Email</label>
+                        <input type="email" placeholder="correo@gmail.com">
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ESTADO CIVIL -->
+
+                <fieldset>
+
+                    <legend>Estado Civil</legend>
+
+                    <div class="radio-box">
+
+                        <label>
+                            <input type="radio" name="civil">
+                            Soltero
+                        </label>
+
+                        <label>
+                            <input type="radio" name="civil">
+                            Casado
+                        </label>
+
+                        <label>
+                            <input type="radio" name="civil">
+                            Divorciado
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- SATISFACCION -->
+
+                <fieldset>
+
+                    <legend>Nivel de satisfacción</legend>
+
+                    <div class="check-box">
+
+                        <label>
+                            <input type="checkbox">
+                            Satisfecho con el trabajo
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Buena comunicación
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Buen trato directivo
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Ambiente adecuado
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- OBSERVACIONES -->
+
+                <fieldset>
+
+                    <legend>Observaciones</legend>
+
+                    <textarea placeholder="Ingrese observaciones..."></textarea>
+
+                </fieldset>
+
+                <!-- BOTONES -->
+
+                <div class="botones">
+
+                    <button type="reset" class="btn nuevo">
+                        Nuevo
+                    </button>
+
+                    <button type="submit" class="btn enviar">
+                        Enviar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.figuras{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(20, 186, 237);
+}
+
+.rombo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(239, 151, 44);
+    transform: rotate(45deg);
+}
+
+.paralelogramo{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(136, 198, 11);
+    transform: skew(20deg);
+}
+
+.triangulo{
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid blueviolet;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid blueviolet;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.circulo2{
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    border-left: 50px solid brown;
+    border-top: 50px solid blue;
+    border-right: 50px solid yellow;
+    border-bottom: 50px solid green;
+}
+
+.diamante {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 109, 0);
+    clip-path: polygon(20% 0,80% 0, 100% 20%, 50% 100%, 0 20%);
+}
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendaV3</title>
+    <link rel="stylesheet" href="CSS/EjemploV3.css">
+</head>
+<body>
+
+    <div class="formulario">
+        <h2>Agregar Contacto</h2>
+        <form id="formulario">
+            <div class="campos">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+            
+            <div class="campos">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono">
+            </div>
+
+            <div class="campos">
+                <label for="email">email:</label>
+                <input type="text" id="email">
+            </div>
+
+            <div class="campos">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion">
+            </div>
+            
+            <div class="botones">
+                <input type="button" value="Guardar" id="guardarBtn">
+                <input type="button" value="Buscar" id="buscarBtn">
+                <input type="button" value="Eliminar" id="eliminarBtn">
+                <input type="button" value="Eliminar todos" id="eliminarTodosBtn">
+                <input type="button" value="Modificar" id="modificarBtn">
+            </div>
+        </form>
+    </div>
+
+    <div class="contactos">
+        <h2>Lista de Contactos</h2>
+        <table class="tabla-contactos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Celular</th>
+                    <th>email</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaContactos">
+                </tbody>
+        </table>
+    </div>
+    
+    <script src="JS/EjemploV3.js"></script>
+</body>
+</html>

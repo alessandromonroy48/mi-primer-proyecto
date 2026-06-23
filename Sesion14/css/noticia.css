@@ -1,0 +1,108 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* --- ESTILOS DE CABECERA (AMARILLA) --- */
+.header-comercio {
+    background-color: #ffcc00; /* Amarillo característico */
+    border-bottom: 2px solid #333;
+}
+
+.top-nav {
+    background-color: #fff;
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ALINEACIÓN DE LOGO Y BOTÓN */
+.logo-principal {
+    display: flex;
+    flex-direction: row;     /* Los pone en línea horizontal */
+    justify-content: center; /* Los centra en la página */
+    align-items: center;     /* Los nivela verticalmente */
+    gap: 20px;               /* Espacio entre logo y botón */
+    padding: 15px 0;
+}
+
+.logo-principal h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 55px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.btn-susc {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* --- CUERPO DE LA NOTICIA --- */
+.noticia-contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.tag-seccion {
+    color: #cc0000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.titulo-noticia {
+    font-size: 34px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+/* --- EFECTO DE IMAGEN ENVOLVENTE --- */
+.cuerpo-noticia {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.imagen-destacada {
+    float: right; /* La imagen se mueve a la derecha */
+    width: 450px;
+    margin: 0 0 15px 20px;
+}
+
+.imagen-destacada img {
+    width: 100%;
+}
+
+.pie-foto {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.subtitulo {
+    font-size: 24px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    margin: 20px 0 10px 0;
+}
+
+.marca-agua-pie {
+    float: right;
+    background-color: #ffcc00;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    clear: both;
+}

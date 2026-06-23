@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Laboral</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f4f8;
+        }
+
+        #Contenedor {
+            width: 600px;
+            background-color: #e9ecef;
+            border: 2px solid #3b7ddd;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #3b7ddd;
+            text-align: center;
+            font-size: 32px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Icono decorativo azul al lado del título */
+        h2::after {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #3b7ddd;
+            border: 2px solid #1c3d6d;
+            /* Representa el cuadro tachado del diseño */
+            background-image: linear-gradient(45deg, transparent 47%, #1c3d6d 48%, #1c3d6d 52%, transparent 53%);
+        }
+
+        fieldset {
+            border: 2px solid #3b7ddd;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: transparent;
+        }
+
+        legend {
+            color: #3b7ddd;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        /* Alineación de etiquetas e inputs */
+        .fila {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            color: #3b7ddd;
+            font-weight: bold;
+            width: 160px;
+            display: inline-block;
+        }
+
+        input[type="text"], select, textarea {
+            border: 2px solid #3b7ddd;
+            padding: 4px;
+            flex-grow: 1;
+        }
+
+        /* Estilos específicos para Radio y Checks */
+        .opcion {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            color: #3b7ddd;
+        }
+
+        .opcion input {
+            margin-right: 10px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 80px;
+            resize: none;
+        }
+
+        /* Botones */
+        #botones {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: white;
+            color: #3b7ddd;
+            border: 2px solid #3b7ddd;
+            padding: 8px 25px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+
+        .btn:hover {
+            background-color: #3b7ddd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="Contenedor">
+        <h2>Encuesta laboral
+            <img src="img/votacion.png" alt="Logo Encuesta" class="logo-encuesta">
+        </h2>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            
+            <fieldset id="datos_personales">
+                <legend>Datos Laborales</legend>
+
+                <div class="fila">
+                    <label for="nombre">Nombre y Apellidos</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div class="fila">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion">
+                </div>
+
+                <div class="fila">
+                    <label for="telefono">Telef | Cel.</label>
+                    <input type="text" name="telefono" id="telefono" style="max-width: 150px;">
+                </div>
+
+                <div class="fila">
+                    <label for="Fecha">Fecha Ingreso</label>
+                    <select id="Fecha" name="Fecha">
+                        <option value="" selected>...</option>
+                        <option value="2025-05-25">2025/05/25</option>
+                    </select>
+                </div>
+
+                <div class="fila">
+                    <label for="Puesto">Puesto de trabajo</label>
+                    <select id="Puesto" name="Puesto">
+                        <option value="" selected>...</option>
+                        <option value="Logistica">Logística</option>
+                        <option value="Administracion">Administración</option>
+                    </select>
+                </div>
+
+                <div class="fila">
+                    <label for="dni">DNI</label>
+                    <input type="text" name="dni" id="dni" style="max-width: 150px;">
+                </div>
+
+                <div class="fila">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+            </fieldset>
+
+            <fieldset id="estado_civil">
+                <legend>Estado civil</legend>
+                <div class="opcion">
+                    <input type="radio" name="civil" id="soltero" value="soltero">
+                    <label for="soltero">Soltero</label>
+                </div>
+                <div class="opcion">
+                    <input type="radio" name="civil" id="casado" value="casado">
+                    <label for="casado">Casado</label>
+                </div>
+                <div class="opcion">
+                    <input type="radio" name="civil" id="divorciado" value="divorciado">
+                    <label for="divorciado">Divorciado</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="nivel_satisfaccion">
+                <legend>Nivel de satisfacción</legend>
+                <div class="opcion">
+                    <input type="checkbox" name="satis1" id="satis1">
+                    <label for="satis1" style="width: auto;">Se siente satisfecho con el trabajo que realiza</label>
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" name="satis2" id="satis2">
+                    <label for="satis2" style="width: auto;">Los canales de comunicación son adecuados</label>
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" name="satis3" id="satis3">
+                    <label for="satis3" style="width: auto;">El trato de los directivos es cordial y efectivo</label>
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" name="satis4" id="satis4">
+                    <label for="satis4" style="width: auto;">El ambiente laboral es el adecuado para mi trabajo</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="grupo_observaciones">
+                <legend>Observaciones</legend>
+                <textarea id="observ" name="observ"></textarea>
+            </fieldset>
+
+            <div id="botones">
+                <input type="reset" class="btn" value="Nuevo">
+                <input type="submit" class="btn" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
