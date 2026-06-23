@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Práctica Casa</title>
+    <link rel="stylesheet" href="../PrySesion20/CSS/style.css">
+</head>
+
+<body>
+
+    <h2>Carrito de Compras</h2>
+
+    <div class="contenedor-principal">
+        <div class="seccion-productos">
+            <h3>Productos Disponibles</h3>
+
+            <div class="tarjeta-producto" data-id="1" data-nombre="Auriculares QCY H3" data-precio="180">
+                <div class="info-prod">
+                    <span class="nombre-prod">Auriculares QCY H3</span>
+                    <span class="precio-prod">S/. 180.00</span>
+                </div>
+                <div class="controles-prod">
+                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <button class="btn-agregar">Agregar</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-id="2" data-nombre="Teclado Mecánico RGB" data-precio="250">
+                <div class="info-prod">
+                    <span class="nombre-prod">Teclado Mecánico RGB</span>
+                    <span class="precio-prod">S/. 250.00</span>
+                </div>
+                <div class="controles-prod">
+                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <button class="btn-agregar">Agregar</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto" data-id="3" data-nombre="Mouse Gamer Inalámbrico" data-precio="120">
+                <div class="info-prod">
+                    <span class="nombre-prod">Mouse Gamer Inalámbrico</span>
+                    <span class="precio-prod">S/. 120.00</span>
+                </div>
+                <div class="controles-prod">
+                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <button class="btn-agregar">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-carrito">
+            <h3>Tu Carrito</h3>
+            <table class="tabla-carrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cant.</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="items-carrito">
+                </tbody>
+            </table>
+
+            <div class="resumen-carrito">
+                <h4>Total: S/. <span id="total-compra">0.00</span></h4>
+                <button id="btn-vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../PrySesion20/JS/script.js"></script>
+</body>
+
+</html>
