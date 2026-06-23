@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'mod 2 - Tienda de Moda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../PryBootStrap/CSS/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info navbar-light py-2">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navSuperior">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navSuperior">
+                <ul class="navbar-nav gap-3 text-center">
+                    <li class="nav-item"><a class="nav-link active text-white fw-bold bg-primary rounded px-3"
+                            href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Faq's</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Moneda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Idioma</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row align-items-center g-3 text-center text-md-start">
+            <div class="col-md-4 text-center">
+                <h1 class="display-5 fw-bold text-dark">D'mod <span class="text-primary">2</span></h1>
+            </div>
+            <div class="col-md-5">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos...">
+                    <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                </div>
+            </div>
+            <div class="col-md-3 text-center text-md-end">
+                <div class="d-inline-flex gap-2">
+                    <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-info btn-sm text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-dark btn-sm"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="btn btn-danger btn-sm"><i class="bi bi-google"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark py-2">
+        <div class="container">
+            <div
+                class="d-flex flex-wrap gap-4 justify-content-center justify-content-md-start text-white header-categorias">
+                <a href="#" class="text-white text-decoration-none py-1">Mujeres</a>
+                <a href="#" class="text-white text-decoration-none py-1">Hombres</a>
+                <a href="#" class="text-white text-decoration-none py-1">Niños</a>
+                <a href="#" class="text-white text-decoration-none py-1">Invierno</a>
+                <a href="#" class="text-white text-decoration-none py-1">Verano</a>
+                <a href="#" class="text-warning text-decoration-none py-1 fw-bold">Ofertas</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row g-4">
+            <div class="col-lg-9">
+                <div class="banner-principal rounded p-5 text-white d-flex align-items-center"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000') center/cover; height: 350px;">
+                    <div>
+                        <h2 class="display-4 fw-bold">Nueva Colección 2026</h2>
+                        <p class="lead">Las mejores tendencias urbanas con descuentos exclusivos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <div class="list-group-item active bg-primary border-primary fw-bold">Marcas</div>
+                    <a href="#" class="list-group-item list-group-item-action">Levi's</a>
+                    <a href="#" class="list-group-item list-group-item-action">Lacoste</a>
+                    <a href="#" class="list-group-item list-group-item-action">Ralph Lauren</a>
+                    <a href="#" class="list-group-item list-group-item-action">Wrangler</a>
+                    <a href="#" class="list-group-item list-group-item-action">Adidas</a>
+                    <a href="#" class="list-group-item list-group-item-action">Vans</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light py-4 my-4 border-top border-bottom">
+        <div class="container">
+            <h3 class="text-center mb-4 fw-bold text-secondary">Nuestros Servicios</h3>
+            <div class="row g-3 text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3 bg-white rounded shadow-sm border border-light h-100">
+                        <i class="bi bi-patch-check-fill text-success display-6 mb-2"></i>
+                        <h5 class="fw-bold mb-1">Calidad Garantizada</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3 bg-white rounded shadow-sm border border-light h-100">
+                        <i class="bi bi-truck text-primary display-6 mb-2"></i>
+                        <h5 class="fw-bold mb-1">Envío Sin Costo</h5>
+                        <small class="text-muted">Adicional</small>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3 bg-white rounded shadow-sm border border-light h-100">
+                        <i class="bi bi-arrow-left-right text-info display-6 mb-2"></i>
+                        <h5 class="fw-bold mb-1">14 Días para Devolución</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3 bg-white rounded shadow-sm border border-light h-100">
+                        <i class="bi bi-headset text-danger display-6 mb-2"></i>
+                        <h5 class="fw-bold mb-1">Soporte a Cualquier Hora</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h3 class="mb-4 fw-bold"><i class="bi bi-bag-heart-fill text-danger me-2"></i>Productos Destacados</h3>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="contenedor-productos">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm text-center card-producto">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=400"
+                        class="card-img-top img-prod p-3" alt="Camisa">
+                    <div class="card-body d-flex flex-column justify-content-end">
+                        <h6 class="card-title fw-bold mb-1">Camisa Jaguar</h6>
+                        <div class="text-warning mb-2 small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            <span class="text-muted small ms-1">(99)</span>
+                        </div>
+                        <p class="card-text mb-3"><span class="text-decoration-line-through text-muted small">S/.
+                                186.00</span> <strong class="text-danger ms-2">S/. 123.00</strong></p>
+                        <button class="btn btn-primary w-100 btn-comprar"><i
+                                class="bi bi-cart-plus me-1"></i>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm text-center card-producto">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=400"
+                        class="card-img-top img-prod p-3" alt="Polera">
+                    <div class="card-body d-flex flex-column justify-content-end">
+                        <h6 class="card-title fw-bold mb-1">Polera Tomy</h6>
+                        <div class="text-warning mb-2 small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                            <span class="text-muted small ms-1">(55)</span>
+                        </div>
+                        <p class="card-text mb-3"><span class="text-decoration-line-through text-muted small">S/.
+                                110.00</span> <strong class="text-danger ms-2">S/. 93.00</strong></p>
+                        <button class="btn btn-primary w-100 btn-comprar"><i
+                                class="bi bi-cart-plus me-1"></i>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm text-center card-producto">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=400"
+                        class="card-img-top img-prod p-3" alt="Pantalón">
+                    <div class="card-body d-flex flex-column justify-content-end">
+                        <h6 class="card-title fw-bold mb-1">Pantalones Yoly</h6>
+                        <div class="text-warning mb-2 small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <span class="text-muted small ms-1">(32)</span>
+                        </div>
+                        <p class="card-text mb-3"><span class="text-decoration-line-through text-muted small">S/.
+                                183.00</span> <strong class="text-danger ms-2">S/. 153.00</strong></p>
+                        <button class="btn btn-primary w-100 btn-comprar"><i
+                                class="bi bi-cart-plus me-1"></i>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm text-center card-producto">
+                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=400"
+                        class="card-img-top img-prod p-3" alt="Falda">
+                    <div class="card-body d-flex flex-column justify-content-end">
+                        <h6 class="card-title fw-bold mb-1">Falda Venus</h6>
+                        <div class="text-warning mb-2 small">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                            <span class="text-muted small ms-1">(49)</span>
+                        </div>
+                        <p class="card-text mb-3"><span class="text-decoration-line-through text-muted small">S/.
+                                153.00</span> <strong class="text-danger ms-2">S/. 143.00</strong></p>
+                        <button class="btn btn-primary w-100 btn-comprar"><i
+                                class="bi bi-cart-plus me-1"></i>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-info text-white py-4 border-top border-bottom">
+        <div class="container text-center max-w-600">
+            <h4 class="fw-bold mb-2">Suscríbete para recibir novedades</h4>
+            <p class="small mb-3">¡Cupones exclusivos y notificaciones de nuestros mejores eventos!</p>
+            <form id="form-suscripcion" class="row justify-content-center g-2 px-3">
+                <div class="col-md-8">
+                    <input type="email" class="form-control" id="email-input" placeholder="nombre@xyz.com" required>
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-dark w-100 fw-bold">SUSCRIBIRME</button>
+                </div>
+                <div class="col-12 mt-2">
+                    <small class="x-small"><input type="checkbox" required class="me-1"> He leído y acepto la política
+                        de protección de datos personales.</small>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 border-bottom border-secondary pb-4 text-center text-md-start">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-info mb-3">UBÍCANOS EN</h5>
+                    <p class="small mb-2">Somos una tienda especializada en ventas integrales de productos de moda y
+                        para el hogar en la Región Lambayeque y todo el norte del país.</p>
+                    <p class="small mb-1"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Carretera a Pimentel km
+                        4.0, Chiclayo</p>
+                    <p class="small mb-1"><i class="bi bi-envelope-fill text-info me-2"></i>ventas@tiendasdmoda.com</p>
+                    <p class="small"><i class="bi bi-telephone-fill text-success me-2"></i>+51 987 654 321</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="fw-bold text-info mb-3">SÍGUENOS</h5>
+                    <div class="d-flex justify-content-center gap-3 fs-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-info mb-3">HORARIO DE ATENCIÓN</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><strong>Lun-Vie:</strong> 8am - 9pm</li>
+                        <li class="mb-1"><strong>Sáb - Dom:</strong> 8am - 6pm</li>
+                        <li><strong>Feriados:</strong> 9am - 1pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="small text-muted mb-0">© 2026 Copyright: Adaptado para fines académicos - USAT</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../PryBootStrap/JS/script.js"></script>
+</body>
+
+</html>

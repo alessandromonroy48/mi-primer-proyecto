@@ -1,0 +1,42 @@
+/* Ajustes generales */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Categorías */
+.header-categorias a {
+    transition: color 0.2s ease-in-out;
+    font-size: 0.95rem;
+}
+
+.header-categorias a:hover {
+    color: #0d6efd !important;
+}
+
+/* Imagen de producto ajustada uniformemente */
+.img-prod {
+    height: 220px;
+    object-fit: contain;
+    background-color: #fbfbfb;
+}
+
+/* Efecto Hover en Tarjetas */
+.card-producto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Limitadores de ancho utilitarios */
+.max-w-600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
